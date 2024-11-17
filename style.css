@@ -1,0 +1,100 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 3em;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #0056b3;
+  padding: 10px;
+  border: 3px solid #007bff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logBook, #startingKilometerEntry, #runEntry {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  margin-top: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#monthInput, #yearInput, #startingKilometerInput, #kilometersRun {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#resultsTable {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensure rounded corners are applied to child elements */
+}
+
+#resultsTable, th, td {
+  border: 1px solid #dee2e6;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+  text-transform: uppercase; /* Make table headers uppercase */
+  font-weight: bold;
+}
+
+td {
+  background-color: #ffffff;
+  color: #333;
+}
+
+tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+tr:hover td {
+  background-color: #e9ecef;
+}
